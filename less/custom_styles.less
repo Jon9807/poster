@@ -1,0 +1,112 @@
+/* LESS styles */
+
+/* Color Variables */
+@primary-color: #8e6f3e; /* Primary color */
+@secondary-color: #ebd99f; /* Secondary color */
+@accent-color: #daaa00; /* Accent color */
+@card-back-color: darkgoldenrod; /* Card back color */
+@text-color: white;
+@text-color2: black;
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #cfb991;
+}
+
+.more-text {
+    display: none;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: fill;
+}
+
+header {
+    height: 75px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    margin: 20px;
+    float: left;
+}
+
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: @secondary-color;
+    color: @text-color2;
+}
+
+.flip-card-back {
+    background-color: @card-back-color;
+    color: @text-color;
+    transform: rotateY(180deg);
+}
+
+.pixHolder {
+    text-align: center;
+    background-color: @accent-color;
+}
+
+.pixHolder img {
+    padding-top: 5px;
+    width: 80%;
+    height: 100px;
+    border-radius: 15px;
+}
+
+.flip-card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: @accent-color;
+}
+.card{
+    background-color: @secondary-color;
+}
+
+.accordion-button {
+    background-color: @primary-color;
+}
+
+.accordion-body {
+    background-color: @secondary-color;
+}
+
+.toast-header {
+    background-color: @primary-color;
+}
+
+.toast-body{
+    background-color: @secondary-color;
+
+}

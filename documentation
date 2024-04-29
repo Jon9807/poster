@@ -1,0 +1,30 @@
+How LESS/SCSS used:
+I chose LESS for this project, primarily to style the index. In my LESS file, I defined multiple color variables, which I then used throughout the file. For instance, for the background of the flip cards, I used the variable ‘@secondary-color’ instead of specifying the color directly.
+
+How responsiveness achieved:
+For responsiveness, I primarily used media queries and Bootstrap. In the index, I used Bootstrap to ensure that the cards works even on smaller screens. Media queries were only used for the header, which I have in a separate file and use across all pages. For example, in my header.html file, I used media queries to change the display and position of the hamburger menu based on the screen width: @media screen and (min-width: 700px).
+
+Hamburger menu created and used:
+The hamburger menu is created using a combination of HTML and CSS. When the hamburger icon is clicked, the URL changes to include #navbar, which targets the <nav> element with id="navbar". This triggers the :target pseudo-class in CSS, and the transform property is changed to translateY(0), which moves the <nav> element into view. When the close icon is clicked, the URL fragment is removed, so the <nav> element is no longer targeted, and it’s hidden again.
+
+Favicon included:
+I created my own favicon and I used it across all pages.
+I also have the favicon on my header. Users can click on
+and it will take them to Purdue School of Engineering & Technology 
+where they can learn more about the concentrations.
+
+Features of Bootstrap used and why:
+I used multiple bootstraps features for this project. 
+For example, in my index file, I used Bootstrap Carousel for the image.
+I also used Bootstrap’s card component to display content.
+I used Bootstrap’s grid system as well to create a responsive layout. 
+The grid system uses containers, rows, and columns to layout and align content. 
+This way the site can adapt to pretty much any screen size.
+I also added interactive features such as tooltips and accordion.
+I used the accordion provide more detailed information about each concentration.
+
+How accessibility is integrated:
+I used ARIA roles and properties for accessibility by providing additional semantics about the nature and behavior of an element.
+For example, on quiz.html, the aria-live="polite" attribute is used to notify screen readers to announce updates at the next graceful opportunity, such as at the end of speaking the current sentence. Also, the aria-label attribute is used to provide an accessible name for an element that can be read by screen readers.
+I also used alt text for images to describe them for blind people and the site is keyboard accessible.
+

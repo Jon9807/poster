@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT Concentrations</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="event.js"></script>
+
+    <!-- Less CSS -->
+    <link rel="stylesheet/less" type="text/css" href="./less/custom_styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_package_v0.17/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_package_v0.17/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_package_v0.17/favicon-16x16.png">
+    <link rel="manifest" href="favicon_package_v0.17/site.webmanifest">
+    <link rel="mask-icon" href="favicon_package_v0.17/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Custom CSS -->
+</head>
+
+<body>
+    <object data="header.html" width="100%" height="150px"></object>
+
+
+    <!-- Concentration Carousel -->
+    <section class="container py-5">
+        <div id="concentrationCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/newwide.png" class="d-block w-100" alt="CIT">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concentration Cards -->
+    <section class="container py-5">
+        <div class="row">
+            <!-- First Concentration Card -->
+            <div class="col-md-3 mb-3">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="images/software.png" class="card-img-top" alt="Concentration 1" data-bs-toggle="modal"
+                        data-bs-target="#concentrationModal" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Software Development">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Web and Software Development</h5>
+                        <div class="card-text flex-grow-1">
+                            <p>Design, write, install, and maintain a variety of software applications for the web and
+                                mobile</p>
+                            <div class="accordion flex-grow-1" id="accordion1">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">View Details</button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordion1">
+                                        <div class="accordion-body">The CIT Web and Software development concentration
+                                            builds on the foundations in the Computer and Information Technology program
+                                            and prepares students for careers as programmers, systems analysts,
+                                            website designers, mobile application developers, and cloud computing
+                                            engineers. Students learn how to create cutting-edge software applications,
+                                            manage projects, collaborate with their peers, generate and exchange data,
+                                            and successfully interact with users. Our graduates are highly sought in
+                                            industries from IT, healthcare, insurance, and retail, which is evidenced
+                                            by our high placement rate and consistent ranking in starting salaries for
+                                            IUPUI graduates.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Concentration Card -->
+            <div class="col-md-3 mb-3">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="images/networking.png" class="card-img-top" alt="Concentration 2" data-bs-toggle="modal"
+                        data-bs-target="#concentrationModal" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Networking Systems">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Networking Systems</h5>
+                        <div class="card-text flex-grow-1">
+                            <p>Design, configure, secure, and maintain IT networks</p>
+                            <div class="accordion flex-grow-1" id="accordion2">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseTwo" aria-expanded="true"
+                                            aria-controls="collapseTwo">View Details</button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordion2">
+                                        <div class="accordion-body">Students in the CIT Networking Systems concentration
+                                            learn how to design, build, and secure the networks on which modern life
+                                            depends. The concentration builds on the foundations in the Computer and
+                                            Information Technology program and prepares students for careers as network
+                                            analysts and project managers. Our graduates are highly sought in
+                                            industries from IT, healthcare, insurance, and retail, which is evidenced
+                                            by our high placement rate and consistent ranking in starting salaries for
+                                            IUPUI graduates.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Concentration Card -->
+            <div class="col-md-3 mb-3">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="images/data.png" class="card-img-top" alt="Concentration 3" data-bs-toggle="modal"
+                        data-bs-target="#concentrationModal" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Data Management">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Data Management</h5>
+                        <div class="card-text flex-grow-1">
+                            <p>Design, implement, program, and maintain data and databases</p>
+                            <div class="accordion flex-grow-1" id="accordion3">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree" aria-expanded="true"
+                                            aria-controls="collapseThree">View Details</button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#accordion3">
+                                        <div class="accordion-body">The CIT Data Management concentration builds on the
+                                            foundations in the Computer and Information Technology program and prepares
+                                            students for careers as data analysts, developers, and information science
+                                            professionals. Our graduates are highly sought in industries from IT,
+                                            healthcare, insurance, and retail, which is evidenced by our high placement
+                                            rate and consistent ranking in starting salaries for IUPUI graduates.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fourth Concentration Card -->
+            <div class="col-md-3 mb-3">
+                <div class="card h-100 d-flex flex-column">
+                    <img src="images/cyber.png" class="card-img-top" alt="Concentration 4" data-bs-toggle="modal"
+                        data-bs-target="#concentrationModal" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Cybersecurity">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Cybersecurity</h5>
+                        <div class="card-text flex-grow-1">
+                            <p>Protect information assets of an organization</p>
+                            <div class="accordion flex-grow-1" id="accordion4">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFour" aria-expanded="true"
+                                            aria-controls="collapseFour">View Details</button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#accordion4">
+                                        <div class="accordion-body">Students in the CIT Information Security
+                                            concentration are prepared for an in-demand career in the development,
+                                            monitoring, and maintenance of secure systems. The concentration builds on
+                                            the foundations in the Computer and Information Technology program and
+                                            prepares students for careers as data security professionals, white hat
+                                            hackers, project managers, and industry leaders in cybersecurity
+                                            implementation and design. Our graduates are highly sought in industries
+                                            from IT, healthcare, insurance, and retail, which is evidenced by our high
+                                            placement rate and consistent ranking in starting salaries for IUPUI
+                                            graduates.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- applied computing -->
+    <h1 class="text-center">Applied Computing</h1>
+    <main class="main-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- CARD 1 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+
+                                <div class="pixHolder">
+                                    <img src="images/mobile-app-development.png" alt="fractions" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Mobile Apps Developer</h3>
+                                </div>
+
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Software</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card" status="important">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+
+                                <div class="pixHolder">
+                                    <img src="images/softwaredev.jpg" alt="word" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Software Developers</h3>
+                                </div>
+
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Software
+                                </p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card" status="done">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+
+                                <div class="pixHolder centered">
+                                    <img src="images/webprogrammer.jpg" alt="country" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Web Programmer
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Software</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder">
+                                    <img src="images/IT-consultants.jpg" alt="history" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Consultant
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Software</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder">
+                                    <img src="images/Web-Developer.jpg" alt="art" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Web Developer</h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Software</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+
+            <!-- ROW 2 -->
+
+            <div class="row justify-content-center">
+                <!-- ROW 2 CARD 1 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder">
+                                    <img src="images/technical-writer-min.jpg" alt="fractions" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Technical Writer</h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Software</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ROW 2 CARD 2 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card" status="important">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder">
+                                    <img src="images/UI-UX-Designer.jpg" alt="word" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>UX/UI Designer</h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Software</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ROW 2 CARD 3 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card" status="done">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder centered">
+                                    <img src="images/fullstack.png" alt="country" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Full Stack Developer</h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Software</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ROW 2 CARD 4 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder">
+                                    <img src="images/gamedev.png" alt="history" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Games Developer</h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Software</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ROW 2 CARD 5 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder">
+                                    <img src="images/devops-engineer.png" alt="art" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>DevOps Engineer</h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Software</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!--ROW 3-->
+
+            <div class="row justify-content-center">
+                <!-- ROW 3 CARD 1 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder">
+                                    <img src="images/coder.png" alt="fractions" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Coder</h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Software</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!--ROW 3 CARD 2 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card" status="important">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder">
+                                    <img src="images/Test-Engineer.jpg" alt="word" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Test Engineer</h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Software</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!--ROW 3 CARD 3 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card" status="done">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder centered">
+                                    <img src="images/webar.png" alt="country" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Web Architect</h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Software</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!--ROW 3 CARD 4 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder">
+                                    <img src="images/network-architecture.avif" alt="history" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Network Architect
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Networking</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!--ROW 3 CARD 5 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder">
+                                    <img src="images/networkadmin.png" alt="art" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Network Administrator
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Networking</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <!-- ROW 4 -->
+            <div class="row justify-content-center">
+                <!--ROW 4 CARD 1 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder">
+                                    <img src="images/Cyber-Security-Analyst.png" alt="fractions" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Security Analyst</h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Cybersecurity</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!--ROW 4 CARD 2 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card" status="important">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder">
+                                    <img src="images/datascience.webp" alt="word" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Data Research Scientist
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Data Management</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!--ROW 4 CARD 3 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card" status="done">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder centered">
+                                    <img src="images/dbadmin.jpg" alt="country" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Database Administrator
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Data Management</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!--ROW 4 CARD 4 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder">
+                                    <img src="images/industryana.png" alt="history" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Industry Analyst
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Data Management</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!--ROW 4 CARD 5 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder">
+                                    <img src="images/cyberex.webp" alt="art" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Cybersecurity Expert</h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Cybersecurity</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+
+            <!-- ROW 5 -->
+
+            <div class="row justify-content-center">
+                <!--ROW 5 CARD 1 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder">
+                                    <img src="images/instructor.png" alt="fractions" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Instructor</h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Span across multiple categories depending on their specific focus within an
+                                    organization</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!--ROW 5 CARD 2 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card" status="important">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder">
+                                    <img src="images/hard.jpg" alt="word" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Hardware Engineer
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Span across multiple categories depending on their specific focus within an
+                                    organization</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!--ROW 5 CARD 3 -->
+                <div class="col-6 col-md-2">
+                    <article class="card flip-card" status="done">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="pixHolder centered">
+                                    <img src="images/off.webp" alt="country" />
+                                </div>
+                                <div class="card-content">
+                                    <h3>Chief Information Officer
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Span across multiple categories depending on their specific focus within an
+                                    organization</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+    </main>
+
+
+    <!--Toast -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 5">
+        <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true"
+            data-bs-autohide="false">
+            <div class="toast-header">
+                <strong class="me-auto">Hello User</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Welcome to CIT Concentrations!
+                On this page are some IT jobs, if you hover over them, 
+                it will show what concentration they are associated
+                with.
+            </div>
+        </div>
+    </div>
+
+
+    </main>
+</body>
+
+</html>
